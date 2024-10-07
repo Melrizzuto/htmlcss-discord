@@ -1,0 +1,328 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Whitney','Helvetica neue',Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+/* utility flex */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+/* general setting button */
+
+.btn{
+	display:inline-block;
+	padding: 8px 10px;
+	border-radius: 20px;
+	background-color: white;
+	color: var(--bg-dark);
+	text-decoration: none;
+    font-size: 14px;
+}
+
+.btn:hover{
+  color: var(--bg-blue);
+    
+}
+
+.b-oversize{
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.b-oversize:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+
+/* background color */
+
+.bg-dark {
+    background-color: var(--bg-dark);
+    color: white;
+}
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.bg-blu {
+    background-color: var(--bg-blue);
+}
+
+.bg-purple {
+   background-color: var(--contrast-color);
+   color: white;
+}
+
+/* color custom properties */
+
+:root {
+    --bg-light: #f6f6f6;
+    --bg-dark: #23272a;
+    --bg-blue: #255EE9;
+    --contrast-color: #748ADB;
+}
+
+
+/* header */
+
+header div{
+    padding: 10px 20px;
+}
+header nav:first-child{
+    align-items: center;
+    justify-content: space-between;
+}
+header button a{
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+ul{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 20px;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+
+header section p{  
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+
+
+/* settings section jambo */
+
+header section:last-child{ 
+    background-image: url('../img/jumbo.png') ;
+    background-size: cover;
+    
+}
+
+#hero{
+    height: 600px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jumbo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* general settings main */
+
+main div{
+    margin-top: 40px;
+    margin: 0 auto;
+    
+}
+
+main div:last-child{
+    padding-bottom: 50px;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: lighter;
+}
+h3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+main section{
+    padding: 80px 20px;
+}
+   
+
+main section p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.wave{
+    background-image: url('../img/wave.svg');
+    width: 100%;
+    height: 100px;
+    opacity: 0.03;
+    margin-top: 80px;
+}
+
+.wave-bottom{
+    background-image: url('../img/wave.svg');
+    width: 100%;
+    height: 100px;
+    opacity: 0.03;
+    transform: rotate(180deg);
+}
+
+
+/* setting the four main sections  */
+
+.image {
+    width: 60%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.content {
+    width: 40%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.central-container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.bg-image{
+    width: 40%;
+    height: 44px;
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-call{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#btn-call:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 9px #8891f270;
+}
+
+
+/* footer */
+
+footer{
+    color: white;
+}
+
+.flex-spacebtween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+    
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-start;
+    padding: 10px 2px;
+}
+
+#bandiera img{
+    width: 20px;
+}
+
+#bandiera{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.language{
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+footer h3{
+    font-size: 2em;
+}
+footer h3, h4 {   
+    text-align: justify;
+    color: var(--contrast-color);
+    line-height: 40px;
+    
+}
+
+footer section div:first-child{
+    text-align: left;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer li{
+    line-height: 30px;
+}
+
+footer ul li i{
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+footer section:last-child{
+    border-top: 1px solid var(--contrast-color);
+}
