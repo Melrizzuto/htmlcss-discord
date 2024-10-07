@@ -47,6 +47,10 @@ body {
     font-size: 14px;
 }
 
+.btn:hover{
+  color: var(--bg-blue);
+    
+}
 
 .b-oversize{
     padding: 10px 20px;
@@ -54,6 +58,9 @@ body {
     font-size: 16px;
 }
 
+.b-oversize:hover{
+    box-shadow: 5px 5px 10px grey;
+}
 
 /* background color */
 
@@ -107,6 +114,9 @@ header ul li a{
     padding: 6px 20px;
 }
 
+header ul li a:hover{
+    text-decoration: underline;
+}
 
 
 header section p{  
@@ -181,6 +191,21 @@ main section p {
     text-align: start;
 }
 
+.wave{
+    background-image: url('../img/wave.svg');
+    width: 100%;
+    height: 100px;
+    opacity: 0.03;
+    margin-top: 80px;
+}
+
+.wave-bottom{
+    background-image: url('../img/wave.svg');
+    width: 100%;
+    height: 100px;
+    opacity: 0.03;
+    transform: rotate(180deg);
+}
 
 
 /* setting the four main sections  */
@@ -222,7 +247,10 @@ main section p {
     margin: 0 auto;
     margin-top: 40px;
 }
-
+#btn-call:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 9px #8891f270;
+}
 
 
 /* footer */
