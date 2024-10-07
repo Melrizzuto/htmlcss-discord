@@ -292,6 +292,6 @@ footer ul li i{
     padding-top: 20px;
 }
 
-footer section:last-child{
+footer nav:last-child{
     border-top: 1px solid var(--contrast-color);
 }
